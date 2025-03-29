@@ -33,7 +33,6 @@ export class TodoManageComponent {
       },
     ]);
 
-    // Reset input fields after adding a todo
     this.todo = { title: '', descreption: '' };
   }
 
