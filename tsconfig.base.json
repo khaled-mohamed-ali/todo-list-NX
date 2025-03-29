@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@todo-list/TodoManage": ["libs/feature/TodoManage/src/index.ts"],
+      "@todo-list/Todos": ["libs/feature/Todos/src/index.ts"],
+      "@todo-list/primary-button": ["libs/UI/primary-button/src/index.ts"],
+      "@todo-list/todo": ["libs/feature/todo/src/index.ts"],
+      "@todo-list/todoItem": ["libs/UI/todoItem/src/index.ts"],
+      "@todo-list/todoService": ["libs/data-access/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

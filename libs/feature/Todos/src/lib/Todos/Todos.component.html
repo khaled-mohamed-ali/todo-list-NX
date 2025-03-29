@@ -1,0 +1,13 @@
+<div>
+  <div class="d-block">
+    <lib-primary-button btnName="create new todo" />
+  </div>
+    <div class="w-100 ">
+      @for (todoItem of todoList(); track todoItem.id) {
+      <ol class="list-group">
+        <li class="list-group-item my-1">
+          <lib-todo-item [todo]="todoItem" [routerLink]="['/todo/id']" (click)="selectTodo(todoItem.id)"/> 
+        </li>
+      </ol>
+      }
+    </div></div>

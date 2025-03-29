@@ -1,2 +1,23 @@
-<app-nx-welcome></app-nx-welcome>
-<router-outlet></router-outlet>
+<div
+  style="
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 22, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  "
+>
+  <div class="container">
+    <div class="row justify-content-center align-items-center h-100 todos">
+      <div class="col-lg-6 col-md-8 col-10 todo-container p-3 rounded">
+        <div class="d-flex justify-content-center p-2">
+          <h2 [routerLink]="'/'">
+            To-Do List <span> <i class="bi bi-card-checklist"></i></span>
+          </h2>
+        </div>
+        <router-outlet />
+      </div>
+    </div>
+  </div>
+</div>
